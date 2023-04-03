@@ -44,15 +44,13 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [prevScrollPos, stickNav, handleScroll]);
 
-
-
   return (
     <header
       className={`${
         stickNav ? "h-14" : " h-14 lg:h-20"
       } w-full fixed top-0 z-50 text-white duration-300 transition-all px-4 xl:px-2  `}
     >
-      <div className="bg-[url('/pattern.svg')] w-full absolute h-full top-[17%] left-0 -z-10" />
+      <div className="bg-[url('/pattern.svg')] w-full absolute h-full top-[17%] left-0 -z-10 " />
       <div className="max-w-[1280px] h-full mx-auto flex justify-between items-center">
         <div className="flex items-center md:gap-x-8  md:w-full h-full w-full max-w-[1000px]">
           <Link href={"/"} className="flex gap-x-2 items-center ">
@@ -61,8 +59,9 @@ const Header = () => {
               height={40}
               width={100}
               alt={"iRoom Logo"}
-              className="rounded-full h-10"
+              className="h-10 w-10 object-contain"
             />
+            <span className="font-semibold text-xs">African Institute for Investigative Journalism</span>
           </Link>
 
           <div className="hidden md:block w-full h-full">

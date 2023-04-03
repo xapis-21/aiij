@@ -1,6 +1,7 @@
 import './globals.css'
 import localFont from "@next/font/local";
 import Header from '@/app/components/Header';
+import Footer from './components/Footer';
 
 
 export const metadata = {
@@ -17,11 +18,11 @@ const bebas = localFont({
   variable: "--font-heading",
 });
 
-const montserrat = localFont({
+const open_sans = localFont({
   variable: "--font-body",
   src: [
     {
-      path: "../public/fonts/Montserrat-VariableFont_wght.ttf",
+      path: "../public/fonts/OpenSans-VariableFont_wdth,wght.ttf",
     },
   ],
 });
@@ -34,10 +35,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${montserrat.variable} ${bebas.variable} font-body bg-igren/[.02] h-full min-h-screen flex flex-col justify-between`}
+        className={`${open_sans.variable} ${bebas.variable} font-body bg-igren/[.02] h-full min-h-screen flex flex-col justify-between`}
       >
         <Header/>
         {children}
+        <Footer/>
       </body>
     </html>
   );

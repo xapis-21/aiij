@@ -8,7 +8,7 @@ body{
 
 @layer base {
   h1 {
-    @apply font-heading;
+    @apply font-heading text-igreen;
   }
   /* ... */
 }
