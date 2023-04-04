@@ -65,8 +65,8 @@ const Footer = () => {
                 className="h-20"
               />
             </a>
-            <FooterLinks title="Projects" links={projects} />
             <FooterLinks title="Company" links={explore} />
+            <FooterLinks title="Projects" links={projects} />
             <FooterLinks title="Location" links={location} />
             <FooterLinks title="iRoom" links={about} />
           </div>

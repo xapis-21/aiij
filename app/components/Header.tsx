@@ -13,7 +13,7 @@ import Popover from "./Popover";
 
 const categories = [
   { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
+  { href: "/about-aiij", label: "About" },
   {
     href: "/programs",
     label: "Programs",
@@ -44,7 +44,7 @@ const Header = () => {
   return (
     <header
       className={`${
-        stickNav ? "h-14 bg-igreen" : " h-14 lg:h-20"
+        stickNav || pathname !== '/' ? "h-14 bg-igreen" : " h-14 lg:h-20"
       } w-screen fixed top-0 left-0 z-50 text-white duration-300 transition-all px-4 xl:px-2 `}
     >
       {stickNav && (
