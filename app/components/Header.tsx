@@ -19,7 +19,7 @@ const categories = [
     label: "Programs",
   },
   {
-    href: "/stories",
+    href: "https://www.theiroom.com",
     label: "iRoom Stories",
   },
   { href: "/contact-us", label: "Contact Us" },
