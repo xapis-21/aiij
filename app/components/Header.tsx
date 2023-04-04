@@ -2,6 +2,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter, usePathname } from "next/navigation";
+import { BsFacebook, BsYoutube, BsInstagram, BsTwitter } from "react-icons/bs";
+
 import {
   HiOutlineEllipsisVertical,
   HiOutlineMagnifyingGlass,
@@ -14,18 +16,12 @@ const categories = [
   {
     href: "/programs",
     label: "Programs",
-    subLinks: [
-      { href: "/training", label: "Training and Capacity Building" },
-      { href: "/collaborative-reporting", label: "Collaborative Reporting" },
-      {
-        href: "/research-and-legal-support",
-        label: "Research and Legal Support",
-      },
-      { href: "/iroom-stories", label: "iRoom Stories" },
-    ],
+  },
+  {
+    href: "/stories",
+    label: "iRoom Stories",
   },
   { href: "/contact-us", label: "Contact Us" },
-  { href: "/donate", label: "Donate" },
 ];
 
 const Header = () => {
@@ -47,12 +43,14 @@ const Header = () => {
   return (
     <header
       className={`${
-        stickNav ? "h-14" : " h-14 lg:h-20"
+        stickNav ? "h-14 bg-igreen" : " h-14 lg:h-20"
       } w-full fixed top-0 z-50 text-white duration-300 transition-all px-4 xl:px-2  `}
     >
-      <div className="bg-[url('/pattern.svg')] w-full absolute h-full top-[17%] left-0 -z-10 " />
+      {stickNav && (
+        <div className="bg-[url('/images/pattern.svg')] w-full absolute h-full top-[17%] left-0 -z-10 " />
+      )}
       <div className="max-w-[1280px] h-full mx-auto flex justify-between items-center">
-        <div className="flex items-center md:gap-x-8  md:w-full h-full w-full max-w-[1000px]">
+        <div className="flex items-center md:gap-x-8  md:w-full h-full w-full max-w-[200px]">
           <Link href={"/"} className="flex gap-x-2 items-center ">
             <Image
               src={"/images/logo_w.svg"}
@@ -61,13 +59,17 @@ const Header = () => {
               alt={"iRoom Logo"}
               className="h-10 w-10 object-contain"
             />
-            <span className="font-semibold text-xs">African Institute for Investigative Journalism</span>
+            <span className="font-semibold text-xs">
+              African Institute for Investigative Journalism
+            </span>
           </Link>
+        </div>
 
+        <div className="hidden lg:flex items-center gap-x-4">
           <div className="hidden md:block w-full h-full">
             <nav className="px-8 h-full">
               <ul className="hidden md:flex gap-x-8 text-sm h-full items-center">
-                {categories.slice(0, 4)?.map(({ label, href }) => (
+                {categories.map(({ label, href }) => (
                   <li
                     key={href}
                     className={`${
@@ -81,9 +83,20 @@ const Header = () => {
               </ul>
             </nav>
           </div>
-        </div>
-
-        <div className="hidden lg:flex text-iyellow gap-x-4">
+          <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
+            <a href="#">
+              <BsFacebook className="hover:text-igreen-light duration-200" />
+            </a>
+            <a href="#">
+              <BsInstagram className="hover:text-igreen-light duration-200" />
+            </a>
+            <a href="#">
+              <BsTwitter className="hover:text-igreen-light duration-200" />
+            </a>
+            <a href="#">
+              <BsYoutube className="hover:text-igreen-light duration-200" />
+            </a>
+          </div>
           <Link href={"/donate"}>
             <button className=" bg-iyellow px-6 py-1.5 text-black rounded-full text-sm font-[500]">
               Donate

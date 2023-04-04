@@ -8,7 +8,7 @@ const Partners = () => {
 
   return (
     <div
-      className="w-full mx-auto py-8 flex flex-col my-4 gap-8 md:px-4 max-w-[1300px]
+      className="w-full mx-auto py-8 flex flex-col my-4 gap-8 md:px-4 max-w-[1350px]
     "
     >
       <Marquee

@@ -1,13 +1,16 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 
 // components/Hero.js
 import { useState, useEffect } from "react";
 
 const images = [
-  "https://images.pexels.com/photos/2833037/pexels-photo-2833037.jpeg?auto=compress&cs=tinysrgb&w=1000",
-  "https://images.pexels.com/photos/716276/pexels-photo-716276.jpeg?auto=compress&cs=tinysrgb&w=1000",
-  "https://images.pexels.com/photos/2305084/pexels-photo-2305084.jpeg?auto=compress&cs=tinysrgb&w=1000",
+  "/images/hero-images/hero-1.jpeg",
+  "/images/hero-images/hero-2.jpeg",
+  "/images/hero-images/hero-3.jpeg",
+  "/images/hero-images/hero-4.jpeg",
+  "/images/hero-images/hero-5.jpeg",
   // ...add more images
 ];
 
@@ -17,7 +20,7 @@ export default function Hero() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentImage((prevImage) => (prevImage + 1) % images.length);
-    }, 6000); // Change image every 5 seconds
+    }, 4000); // Change image every 5 seconds
 
     return () => clearInterval(timer);
   }, []);
@@ -37,11 +40,16 @@ export default function Hero() {
         />
       ))}
       <div className="absolute inset-0 w-full h-full flex items-center justify-start z-30 max-w-[1280px] left-[50%] -translate-x-[50%] ">
-        <div className="text-4xl md:text-6xl font-bold text-center max-w-[600px] px-4 xl:px-2">
+        <div className="text-4xl md:text-6xl font-bold text-center max-w-[600px] px-4 xl:px-2 flex flex-col items-start">
           <h1 className="flex flex-col text-[100px] text-left text-white ">
             <span>Investigative journalism in</span>
             defense of public interest.
           </h1>
+          <Link href={"/contact"}>
+            <button className=" bg-iyellow px-6 py-1.5 text-black rounded-full text-sm font-[500]">
+              Contact us
+            </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -99,7 +99,9 @@ export default async function Home() {
     <main className="flex-grow">
       <Hero />
       <Partners />
-      <AiijCard/>
+      <section className="bg-igreen/5">
+        <AiijCard />
+      </section>
       <section className="py-20 relative">
         <div className=" before:absolute before:w-full before:h-full before:left-0 before:right-0 before:opacity-5 before:bg-[url('/images/pattern.svg')] w-full absolute h-full top-0 left-0 -z-10 after:absolute after:bg-gradient-to-t after:from-white after:via-white/60 after:top-0 after:left-0 after:w-full after:h-full" />
         <div
@@ -136,7 +138,7 @@ export default async function Home() {
       </section>
       {/* <Banner /> */}
       <section className="py-20 relative bg-igreen text-white flex flex-col items-center">
-        <h1 className="text-4xl font-boldy font-bold">Got a Story?</h1>
+        <h1 className="text-4xl text-white font-bold">Got a Story?</h1>
         <a
           href="https://www.theiroom.com/share-a-tip"
           className="text-iyellow underline"
@@ -151,9 +153,8 @@ export default async function Home() {
         >
           <h1 className="text-center text-6xl font-bold mb-4">Testimonials</h1>
           <h2 className="text-4xl max-w-[600px]">
-           Real-life stories and
-            experiences that inspire us to continue our mission of promoting
-            social change through investigative journalism.
+            Real-life stories and experiences that inspire us to continue our
+            mission of promoting social change through investigative journalism.
           </h2>
         </div>
         <div className="max-w-[1280px] mx-auto flex items-start flex-wrap gap-4">

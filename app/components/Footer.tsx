@@ -37,7 +37,19 @@ const Footer = () => {
     <footer className="bg-[#03100b] text-white relative w-full bottom-0 overflow-hidden isolate pt-8 px-4 lg:px-2">
       <div className="w-full max-w-[1280px] mx-auto">
         <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
-          <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 md:grid-cols-4 sm:gap-6 w-full">
+          <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 md:grid-cols-5 sm:gap-6 w-full">
+            <a
+              href={"https://www.africaniij.org"}
+              className="flex gap-x-2 items-center flex-1"
+            >
+              <Image
+                src={"/images/logo.svg"}
+                height={100}
+                width={100}
+                alt={"iRoom Logo"}
+                className="h-20"
+              />
+            </a>
             <FooterLinks title="Projects" links={projects} />
             <FooterLinks title="Explore" links={explore} />
             <FooterLinks title="Support" links={support} />
@@ -46,21 +58,6 @@ const Footer = () => {
         </div>
 
         <div className="w-full border-t-[.5px] border-t-igreen/40 sm:flex sm:items-center sm:justify-between mb-2 lg:mb-0 py-4">
-          <a
-            href={"https://www.africaniij.org"}
-            className="flex gap-x-2 items-center flex-1"
-          >
-            <Image
-              src={"/images/logo.svg"}
-              height={40}
-              width={40}
-              alt={"iRoom Logo"}
-              className="h-10"
-            />
-            <span className="flex max-w-[150px] text-xs hover:text-igreen-light">
-              African Institute of Investigative Journalism
-            </span>
-          </a>
           <div className="flex-1 flex flex-col-reverse gap-y-2 lg:flex-row justify-between">
             <a
               href="https://www.africaniij.org"
