@@ -67,4 +67,4 @@ const ProjectCards = () => {
   );
 };
 
-export defau
+export default ProjectCards;
