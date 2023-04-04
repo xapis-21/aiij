@@ -12,9 +12,9 @@ type FooterLinksProps = {
 const FooterLinks = ({ links,title }:FooterLinksProps) => {
   return (
     <div className="pb-4">
-      <h1 className="text-sm font-semibold text-center w-fit">{title}</h1>
+      <h2 className="text-sm font-semibold text-white/80 text-center w-fit">{title}</h2>
       <nav className="my-2">
-        <ul className="flex flex-col items-start">
+        <ul className="flex flex-col items-start text-white/70">
           {links.map(({ name, path }) => (
             <li
               key={path}

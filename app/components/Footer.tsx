@@ -6,10 +6,22 @@ import FooterLinks from "./FooterLinks";
 const Footer = () => {
   //create 4 arrays of footer links one for projects,explore, support and about as i listed them below
   const projects = [
-    { name: "Human Rights", path: "/program/human-rights" },
-    { name: "Social Justice", path: "/program/social-justice" },
-    { name: "Hard Questions", path: "/program/hard-questions" },
-    { name: "Accountability", path: "/program/accountability" },
+    {
+      name: "Human Rights",
+      path: "https://www.theiroom.com/program/human-rights",
+    },
+    {
+      name: "Social Justice",
+      path: "https://www.theiroom.com/program/social-justice",
+    },
+    {
+      name: "Hard Questions",
+      path: "https://www.theiroom.com/program/hard-questions",
+    },
+    {
+      name: "Accountability",
+      path: "https://www.theiroom.com/program/accountability",
+    },
     {
       name: "Climate Change and Environmental Crime",
       path: "/program/climate-change-and-environment",
@@ -17,20 +29,23 @@ const Footer = () => {
   ];
 
   const explore = [
-    { name: "Stories", path: "/filter/stories" },
-    { name: "Videos", path: "/filter/videos" },
-    { name: "Podcasts", path: "/filter/podcasts" },
-    { name: "Reels", path: "/filter/reels" },
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about-aiij" },
+    { name: "Programs", path: "/programs" },
+    { name: "contact us", path: "/contact" },
   ];
 
-  const support = [
-    { name: "Donate", path: "/donate" },
-    { name: "Share a tip", path: "/share-a-tip" },
+  const location = [
+    { name: "+256 789620727", path: "" },
+    { name: "Plot 12163", path: "" },
+    { name: "Kira, Bulindo RD", path: "" },
   ];
 
   const about = [
-    { name: "iRoom", path: "/about" },
-    { name: "AIIJ Website", path: "http://www.africaniij.org" },
+    { name: "Stories", path: "https://www.theiroom.com/filter/stories" },
+    { name: "Videos", path: "https://www.theiroom.com/filter/videos" },
+    { name: "Podcasts", path: "https://www.theiroom.com/filter/podcasts" },
+    { name: "Reels", path: "https://www.theiroom.com/filter/reels" },
   ];
 
   return (
@@ -51,9 +66,9 @@ const Footer = () => {
               />
             </a>
             <FooterLinks title="Projects" links={projects} />
-            <FooterLinks title="Explore" links={explore} />
-            <FooterLinks title="Support" links={support} />
-            <FooterLinks title="About" links={about} />
+            <FooterLinks title="Company" links={explore} />
+            <FooterLinks title="Location" links={location} />
+            <FooterLinks title="iRoom" links={about} />
           </div>
         </div>
 
