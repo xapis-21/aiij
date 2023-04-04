@@ -150,16 +150,16 @@ export default async function Home() {
       </section>
       <section className="py-20">
         <div
-          className="max-w-[1280px] mx-auto flex flex-col items-start mb-14
+          className="max-w-[1280px] mx-auto flex flex-col items-start mb-14 px-4 md:px-2
         "
         >
-          <h1 className="text-center text-6xl font-bold mb-4">Testimonials</h1>
-          <h2 className="text-4xl max-w-[600px]">
+          <h1 className="text-center text-4xl md:text-6xl font-bold mb-4">Testimonials</h1>
+          <h2 className="text-base md:text-4xl max-w-[600px]">
             Real-life stories and experiences that inspire us to continue our
             mission of promoting social change through investigative journalism.
           </h2>
         </div>
-        <div className="max-w-[1280px] mx-auto flex items-start flex-wrap gap-4">
+        <div className="max-w-[1280px] mx-auto flex flex-col md:flex-row items-start flex-wrap gap-4 px-4 md:px-2">
           {testimonials.map(({ name, image, comment, title }) => (
             <Testimonial
               key={name}

@@ -13,7 +13,7 @@ const AiijCard = () => {
         >
           <div className="w-[300px] h-[300px] md:w-[500px] md:h-[500px] rounded-full overflow-hidden ">
             <Image
-              src="/images/team/solomon_no_bg.png"
+              src="/images/team/solomon_no_bg_alt.png"
               alt="Image description"
               className="rounded-md"
               width={500}
