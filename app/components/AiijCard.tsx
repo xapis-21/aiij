@@ -2,14 +2,16 @@ import Image from "next/image";
 import Link from "next/link";
 
 const AiijCard = () => {
+  const mdStyles =
+    "md:w-[500px] md:h-[500px] md:after:w-[400px] md:after:h-[400px] md:before:w-[400px] md:before:h-[400px]";
   return (
-    <div className="relative flex flex-col md:flex-row items-start gap-y-4 md:gap-x-4 max-w-[1280px] mx-auto py-20">
-      <div className="sticky top-40  md:w-1/2 ">
+    <div className="relative flex flex-col md:flex-row items-center md:items-start gap-y-8 md:gap-x-4 max-w-[1280px] mx-auto py-14 md:py-20 px-4 md:px-2">
+      <div className="md:sticky top-40  md:w-1/2 duration-500">
         <div
-          className="w-[500px] h-[500px] flex-1 rounded-full  after:bg-iyellow/80 after:backdrop-blur-sm after:w-[400px] after:h-[400px] before:w-[400px] before:h-[400px] after:absolute after:rounded-full before:rounded-full after:top-[40%] isolate after:-z-10 after:left-[50%]  before:-z-20 before:left-[40%] before:top-[50%] after:-translate-x-[50%] after:-translate-y-[50%] relative before:-translate-x-[50%] before:-translate-y-[50%] before:absolute before:bg-[url('/images/pattern.svg')] 
-        "
+          className={`w-[300px] h-[300px] flex-1 rounded-full  after:bg-iyellow/80 after:backdrop-blur-sm after:w-[200px] after:h-[200px] before:w-[200px] before:h-[200px] after:absolute after:rounded-full before:rounded-full after:top-[40%] isolate after:-z-10 after:left-[50%]  before:-z-20 before:left-[40%] before:top-[50%] after:-translate-x-[50%] after:-translate-y-[50%] relative before:-translate-x-[50%] before:-translate-y-[50%] before:absolute before:bg-[url('/images/pattern.svg')] 
+        ${mdStyles}`}
         >
-          <div className="w-[500px] h-[500px] rounded-full overflow-hidden ">
+          <div className="w-[300px] h-[300px] md:w-[500px] md:h-[500px] rounded-full overflow-hidden ">
             <Image
               src="/images/team/solomon_no_bg.png"
               alt="Image description"
@@ -22,7 +24,7 @@ const AiijCard = () => {
       </div>
       <div className="md:w-1/2">
         <div className="flex flex-col items-start max-w-[600px] min-h-[500px] ">
-          <h1 className="text-center text-6xl font-bold mb-4">What is AIIJ?</h1>
+          <h1 className="text-center text-4xl md:text-6xl font-bold mb-4">What is AIIJ?</h1>
           <p className="mb-12">
             AIIJ is an organization dedicated to fostering investigative
             journalism in Africa, with a focus on Uganda. We promote impactful

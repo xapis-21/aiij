@@ -12,9 +12,9 @@ const ProgramCard = ({ image, icon, title }: ProgramCardProps) => {
       <Image
         src={image}
         alt={"hello"}
-        width={300}
+        width={400}
         height={500}
-        className={"max-h-[400px] h-full object-cover"}
+        className={"max-h-[400px] h-full w-full object-cover"}
       />
       <div className="absolute bottom-0 left-0 bg-gradient-to-t from-black w-full h-full flex items-end justify-center">
         <h2 className="text-white mb-14 font-semibold">{title}</h2>

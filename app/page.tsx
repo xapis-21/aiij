@@ -102,27 +102,29 @@ export default async function Home() {
       <section className="bg-igreen/5">
         <AiijCard />
       </section>
-      <section className="py-20 relative">
+      <section className="py-20 pb-2 md:pb-20 relative">
         <div className=" before:absolute before:w-full before:h-full before:left-0 before:right-0 before:opacity-5 before:bg-[url('/images/pattern.svg')] w-full absolute h-full top-0 left-0 -z-10 after:absolute after:bg-gradient-to-t after:from-white after:via-white/60 after:top-0 after:left-0 after:w-full after:h-full" />
         <div
-          className="max-w-[1280px] mx-auto flex flex-col items-start
-        "
+          className="max-w-[1280px] mx-auto flex flex-col items-start px-4 md:px-2
+       "
         >
-          <h1 className="text-center text-6xl font-bold mb-4">Our Programs</h1>
-          <h2 className="text-4xl max-w-[600px]">
+          <h1 className="text-center text-4xl md:text-6xl font-bold mb-4">
+            Our Programs
+          </h1>
+          <h2 className="text-base md:text-4xl max-w-[600px]">
             We empower Africa's next-generation investigative journalists
             through skill development, collaboration, and resource provision.
           </h2>
         </div>
-        <div className="flex justify-center w-full gap-4 mx-auto py-20">
+        <div className="flex flex-col md:flex-row justify-center w-full md:gap-4 mx-auto py-20 pb-2 md:pb-20 ">
           {programs.map(({ image, title, icon }) => (
-            <div key={image} className="h-[500px] even:items-end flex ">
+            <div key={image} className="h-[500px] md:even:items-end flex ">
               <ProgramCard image={image} icon={icon} title={title} />
             </div>
           ))}
         </div>
       </section>
-      <section className="bg-igreen/5 py-20">
+      <section className="bg-igreen/5 py-20 ">
         <ProjectCards />
       </section>
       <section className=" bg-iyellow/10 py-20 flex flex-col items-center">

@@ -46,19 +46,19 @@ const projects = [
 
 const ProjectCards = () => {
   return (
-    <div className="projects-section max-w-[1280px] mx-auto">
+    <div className="projects-section max-w-[1280px] mx-auto px-4 md:px-2">
       <div
         className="flex flex-col items-start
         "
       >
-        <h1 className="text-center text-6xl font-bold mb-4">Our Projects</h1>
-        <h2 className="text-4xl max-w-[600px]">
+        <h1 className="text-center text-4xl md:text-6xl font-bold mb-4">Our Projects</h1>
+        <h2 className="text-base md:text-4xl max-w-[600px]">
           We focus on critical areas where investigative journalism can make a
           real impact, shedding light on pressing issues and giving a voice to
           the voiceless
         </h2>
       </div>
-      <div className="projects-container flex space-x-4 pb-4 py-8">
+      <div className="w-full overflow-x-scroll md:overflow-x-visible flex space-x-4 pb-4 py-8">
         {projects.map((project: any, index: Key | null | undefined) => (
           <Project key={index} project={project} />
         ))}
@@ -67,4 +67,4 @@ const ProjectCards = () => {
   );
 };
 
-export default ProjectCards;
+export defau

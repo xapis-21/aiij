@@ -26,7 +26,7 @@ const Partners = () => {
               src={`/images/partners/partner-${post}.png`}
               alt={""}
               className={
-                "h-[50px] w-auto mx-4 grayscale hover:grayscale-0 duration-300"
+                "h-8 md:h-[50px] w-auto mx-4 grayscale hover:grayscale-0 duration-300"
               }
             />
           ))}
@@ -48,7 +48,7 @@ const Partners = () => {
               src={`/images/partners/partner-${post}.png`}
               alt={""}
               className={
-                "h-[50px] w-auto mx-4 grayscale hover:grayscale-0 duration-300"
+                "h-8 md:h-[50px] w-auto mx-4 grayscale hover:grayscale-0 duration-300"
               }
             />
           ))}

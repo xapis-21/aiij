@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 body{
-  overflow-x: hidden
+  overflow-x: hidden;
+  position: relative;
+  width: 100vw;
 }
 
 @layer base {

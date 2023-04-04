@@ -9,6 +9,7 @@ import {
   HiOutlineMagnifyingGlass,
 } from "react-icons/hi2";
 import { useCallback, useEffect, useState } from "react";
+import Popover from "./Popover";
 
 const categories = [
   { href: "/", label: "Home" },
@@ -44,22 +45,22 @@ const Header = () => {
     <header
       className={`${
         stickNav ? "h-14 bg-igreen" : " h-14 lg:h-20"
-      } w-full fixed top-0 z-50 text-white duration-300 transition-all px-4 xl:px-2  `}
+      } w-screen fixed top-0 left-0 z-50 text-white duration-300 transition-all px-4 xl:px-2 `}
     >
       {stickNav && (
         <div className="bg-[url('/images/pattern.svg')] w-full absolute h-full top-[17%] left-0 -z-10 " />
       )}
-      <div className="max-w-[1280px] h-full mx-auto flex justify-between items-center">
+      <div className="max-w-[1280px] w-screen h-full mx-auto flex justify-between items-center">
         <div className="flex items-center md:gap-x-8  md:w-full h-full w-full max-w-[200px]">
-          <Link href={"/"} className="flex gap-x-2 items-center ">
+          <Link href={"/"} className="flex gap-x-2 items-center">
             <Image
               src={"/images/logo_w.svg"}
               height={40}
               width={100}
               alt={"iRoom Logo"}
-              className="h-10 w-10 object-contain"
+              className="md:h-10 md:w-10 h-8 w-8 object-contain"
             />
-            <span className="font-semibold text-xs">
+            <span className="font-semibold text-xs hidden md:block">
               African Institute for Investigative Journalism
             </span>
           </Link>
@@ -103,6 +104,8 @@ const Header = () => {
             </button>
           </Link>
         </div>
+        <Popover categories={categories} />
+        
       </div>
     </header>
   );
