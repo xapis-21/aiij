@@ -20,7 +20,7 @@ export const metadata = {
     "African Institute of Investigative Journalism",
   ],
   icons: {
-    icon: "/images/favicon.png",
+    icon: "/favicon.png",
   },
   openGraph: {
     url: "https://www.theiroom.com",
