@@ -129,7 +129,7 @@ export default async function Home() {
       </section>
       <section className=" bg-iyellow/10 py-20 flex flex-col items-center">
         <PostGrid
-          title={"OUR LATEST INVESTIGATIONS"}
+          title={"LATEST"}
           posts={posts.splice(0, 4)}
         />
         <a href="" className="mx-auto mt-8">
