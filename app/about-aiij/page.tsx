@@ -114,14 +114,14 @@ const AboutPage = () => {
           />
           <Member
             src={"/images/team/talent_no_bg.png"}
-            name={"Talent Akatukunda"}
-            title={"Finance and Admin"}
+            name={"Talent Akankunda"}
+            title={"Finance and Admin Officer"}
           />
 
           <Member
             src={"/images/team/sandra_no_bg.png"}
             name={"Sandra Nansubuga"}
-            title={" Procurement and Admin manager"}
+            title={"Procurement Officer"}
           />
         </div>
       </div>

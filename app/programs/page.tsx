@@ -6,8 +6,9 @@ const ProgramsPage = () => {
       title: "Training & Capacity Building",
       image: "/images/programs/train.jpeg",
       icon: "/images/svg/training.svg",
-      desc: "We believe in and work hard to promote access to public resources and opportunities to conduct this form of journalism. And indeed, on this path we have in the last year 2020 worked with over 50 journalists to deepen investigative reporting in the areas of public debt management, SRHR and elections reporting.",
+      desc: "At AIIJ we believe in skilling and training existing and the next generation of investigative journalism on the continent. There is a huge gap and demand of good journalism and indeed investigative journalism in the continent for reporters to speak about humana rights in the continent but this can be done if reporters have the skills and capacity to do so. We are therefore committed to training and capacity building for investigative journalism in the continent.",
       benefits: [
+        "Growth of investigative Journalism in the continent.",
         "Enhances journalists' skills in investigative reporting techniques.",
         "Builds a network of like-minded journalists, fostering collaboration and sharing of resources.",
         "Increases the credibility and professionalism of participating journalists.",
@@ -17,7 +18,7 @@ const ProgramsPage = () => {
       title: "Collaborative reporting",
       image: "/images/programs/collab.jpeg",
       icon: "/images/svg/collab.svg",
-      desc: "We also believe very strongly in collaborative reporting. A journalism that sees newsrooms as partners in the search for truth rather than competitors. As an institute we have – and will demonstrate in the coming weeks- investment in this form of reporting.",
+      desc: "Our dream is to see joint investigative journalism and projects that speak about injustices in society. We believe that together we can achieve much if we put together resources and man power we can build projects that can change the narrative of the continent.",
       benefits: [
         "Leverages the strengths and resources of multiple newsrooms for more comprehensive investigations",
         "Increases the reach and impact of investigative stories.",
@@ -67,8 +68,7 @@ const ProgramsPage = () => {
             Programs at AIIJ
           </h1>
           <p className="mb-12">
-            We empower Africa's next-generation investigative journalists
-            through skill development, collaboration, and resource provision.
+            Growing investigative Journalism in the continent.
           </p>
         </div>
       </div>
