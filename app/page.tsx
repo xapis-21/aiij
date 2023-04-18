@@ -153,7 +153,9 @@ export default async function Home() {
           className="max-w-[1280px] mx-auto flex flex-col items-start mb-14 px-4 md:px-2
         "
         >
-          <h1 className="text-center text-4xl md:text-6xl font-bold mb-4">Testimonials</h1>
+          <h1 className="text-center text-4xl md:text-6xl font-bold mb-4">
+            Testimonials
+          </h1>
           <h2 className="text-base md:text-4xl max-w-[600px]">
             Real-life stories and experiences that inspire us to continue our
             mission of promoting social change through investigative journalism.

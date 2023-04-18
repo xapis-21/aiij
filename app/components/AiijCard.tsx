@@ -24,7 +24,9 @@ const AiijCard = () => {
       </div>
       <div className="md:w-1/2">
         <div className="flex flex-col items-start max-w-[600px] min-h-[500px] ">
-          <h1 className="text-center text-4xl md:text-6xl font-bold mb-4">What is AIIJ?</h1>
+          <h1 className="text-center text-4xl md:text-6xl font-bold mb-4">
+            What is AIIJ?
+          </h1>
           <p className="mb-12">
             AIIJ is an organization dedicated to fostering investigative
             journalism in Africa, with a focus on Uganda. We promote impactful
@@ -32,19 +34,18 @@ const AiijCard = () => {
             inform public discourse and create a supportive environment for
             passionate investigative journalists.
           </p>
-
-          <h2 className="text-center text-2xl font-bold mb-4">Our Mission</h2>
-          <p className="mb-12">
-            Growing investigative journalism in Africa through an integrated
-            programme of training and capacity building, collaborative
-            reporting, research, grant making and legal support.
-          </p>
-
           <h2 className="text-center text-2xl font-bold mb-4">Our Vision</h2>
           <p className="mb-12">
             To be a Center of excellence for investigative journalism in defense
             of public interest.
           </p>
+          <h2 className="text-center text-2xl font-bold mb-4">Our Mission</h2>
+          <p className="mb-12">
+            Growing investigative journalism in Africa through an integrated
+            program of training and capacity building, collaborative
+            reporting, research, grant making and legal support.
+          </p>
+
           <Link href={"/about-aiij"}>
             <button className=" bg-igreen px-6 py-1.5 text-white rounded-full text-sm font-[500]">
               Read more

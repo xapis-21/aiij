@@ -33,20 +33,19 @@ const AboutPage = () => {
         <div className="max-w-[1280px] mx-auto pt-14 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 px-4 md:px-2 pb-14">
           <div className="flex flex-col items-start max-w-[400px]">
             <h2 className="text-center text-2xl font-bold mb-4 text-igreen">
+              Our Vision
+            </h2>
+            <p className=" mb-8 md:mb-12">
+              To be a Center of excellence for investigative journalism in
+              defense of public interest.
+            </p>
+            <h2 className="text-center text-2xl font-bold mb-4 text-igreen">
               Our Mission
             </h2>
             <p className=" mb-8 md:mb-12">
               Growing investigative journalism in Africa through an integrated
               programme of training and capacity building, collaborative
               reporting, research, grant making and legal support.
-            </p>
-
-            <h2 className="text-center text-2xl font-bold mb-4 text-igreen">
-              Our Vision
-            </h2>
-            <p className=" mb-8 md:mb-12">
-              To be a Center of excellence for investigative journalism in
-              defense of public interest.
             </p>
           </div>
           <div className="flex flex-col items-start max-w-[400px]">
@@ -111,7 +110,7 @@ const AboutPage = () => {
           <Member
             src={"/images/team/rahim_no_bg.png"}
             name={"Rahim Nwali"}
-            title={"Associate Digital Communications"}
+            title={"Chief of Operations"}
           />
           <Member
             src={"/images/team/talent_no_bg.png"}
@@ -124,7 +123,6 @@ const AboutPage = () => {
             name={"Sandra Nansubuga"}
             title={" Procurement and Admin manager"}
           />
-          
         </div>
       </div>
     </main>
