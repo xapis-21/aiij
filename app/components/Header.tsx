@@ -44,7 +44,7 @@ const Header = () => {
   return (
     <header
       className={`${
-        stickNav || pathname !== '/' ? "h-14 bg-igreen" : " h-14 lg:h-20"
+        stickNav || pathname !== "/" ? "h-14 bg-igreen" : " h-14 lg:h-20"
       } w-screen fixed top-0 left-0 z-50 text-white duration-300 transition-all px-4 xl:px-2 `}
     >
       {stickNav && (
@@ -85,16 +85,16 @@ const Header = () => {
             </nav>
           </div>
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-            <a href="#">
+            <a href="https://www.facebook.com/AfricanIIJ">
               <BsFacebook className="hover:text-igreen-light duration-200" />
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/africaniij/">
               <BsInstagram className="hover:text-igreen-light duration-200" />
             </a>
-            <a href="#">
+            <a href="https://twitter.com/AfricanIIJ">
               <BsTwitter className="hover:text-igreen-light duration-200" />
             </a>
-            <a href="#">
+            <a href="https://www.youtube.com/@aiijchannel5382">
               <BsYoutube className="hover:text-igreen-light duration-200" />
             </a>
           </div>
@@ -105,7 +105,6 @@ const Header = () => {
           </Link>
         </div>
         <Popover categories={categories} />
-        
       </div>
     </header>
   );

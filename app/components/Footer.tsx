@@ -81,16 +81,16 @@ const Footer = () => {
               copyright &copy; 2023 AIIJ
             </a>
             <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-              <a href="#">
+              <a href="https://www.facebook.com/AfricanIIJ">
                 <BsFacebook className="hover:text-igreen-light duration-200" />
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/africaniij/">
                 <BsInstagram className="hover:text-igreen-light duration-200" />
               </a>
-              <a href="#">
+              <a href="https://twitter.com/AfricanIIJ">
                 <BsTwitter className="hover:text-igreen-light duration-200" />
               </a>
-              <a href="#">
+              <a href="https://www.youtube.com/@aiijchannel5382">
                 <BsYoutube className="hover:text-igreen-light duration-200" />
               </a>
             </div>
