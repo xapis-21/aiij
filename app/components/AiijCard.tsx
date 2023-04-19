@@ -25,7 +25,7 @@ const AiijCard = () => {
       <div className="md:w-1/2">
         <div className="flex flex-col items-start max-w-[600px] min-h-[500px] ">
           <h1 className="text-center text-4xl md:text-6xl font-bold mb-4">
-            What is AIIJ?
+            Who is AIIJ?
           </h1>
           <p className="mb-12">
             AIIJ is an organization dedicated to fostering investigative
