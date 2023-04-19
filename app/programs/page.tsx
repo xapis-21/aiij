@@ -6,7 +6,7 @@ const ProgramsPage = () => {
       title: "Training & Capacity Building",
       image: "/images/programs/train.jpeg",
       icon: "/images/svg/training.svg",
-      desc: "At AIIJ we believe in skilling and training existing and the next generation of investigative journalism on the continent. There is a huge gap and demand of good journalism and indeed investigative journalism in the continent for reporters to speak about humana rights in the continent but this can be done if reporters have the skills and capacity to do so. We are therefore committed to training and capacity building for investigative journalism in the continent.",
+      desc: "At AIIJ, we believe in providing skills and training to both existing and the next generation of investigative journalists on the continent. There is a significant gap and demand for high-quality journalism, particularly investigative journalism, in Africa. This is necessary for reporters to address human rights issues effectively. However, this can only be achieved if reporters possess the required skills and capacity. Therefore, we are committed to fostering training and capacity building for investigative journalism across the continent.",
       benefits: [
         "Growth of investigative Journalism in the continent.",
         "Enhances journalists' skills in investigative reporting techniques.",
