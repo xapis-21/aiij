@@ -55,7 +55,7 @@ const ProjectCards = () => {
         <h2 className="text-base md:text-4xl max-w-[600px]">
           We focus on critical areas where investigative journalism can make a
           real impact, shedding light on pressing issues and giving a voice to
-          the voiceless
+          the voiceless.
         </h2>
       </div>
       <div className="w-full overflow-x-scroll md:overflow-x-visible flex space-x-4 pb-4 py-8">

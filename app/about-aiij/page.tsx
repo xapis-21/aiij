@@ -10,11 +10,11 @@ const AboutPage = () => {
             About the AIIJ
           </h1>
           <p className="mb-12">
-            AIIJ is an organization dedicated to fostering investigative
-            journalism in Africa, with a focus on Uganda. We promote impactful
-            media practices rooted in human rights and social justice, aiming to
-            inform public discourse and create a supportive environment for
-            passionate investigative journalists.
+            AIIJ is an organization fostering investigative journalism in Africa
+            based in Uganda. We promote impactful media practices rooted in
+            human rights and social justice to inform public discourse and
+            create a supportive environment for passionate investigative
+            journalists.
           </p>
         </div>
       </div>
@@ -59,7 +59,7 @@ const AboutPage = () => {
                 </span>
                 <p>
                   Promoting access to resources and opportunities for
-                  investigative journalism
+                  investigative journalism.
                 </p>
               </li>
               <li className="flex gap-4">
@@ -68,7 +68,7 @@ const AboutPage = () => {
                 </span>
                 <p>
                   Strengthening the capacities and practice of investigative
-                  journalism
+                  journalism.
                 </p>
               </li>
               <li className="flex gap-4">
@@ -77,8 +77,8 @@ const AboutPage = () => {
                 </span>
                 <p>
                   Shaping the practice of investigative journalism through
-                  collaborative and ground breaking investigations in issues
-                  affecting society
+                  collaborative and groundbreaking investigations in issues
+                  affecting society.
                 </p>
               </li>
             </ol>
@@ -91,9 +91,9 @@ const AboutPage = () => {
             Meet the Team
           </h1>
           <p className="mb-12">
-            We are exceptionally grateful to smart and yet humble team always
-            pitching fresh and radical ideas to deepen investigative journalism
-            not only in Uganda but also on the continent.
+            We are exceptionally grateful to the smart and humble team pitching
+            fresh and radical ideas to deepen investigative journalism in Uganda
+            and the continent.
           </p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-5 gap-4 gap-y-8">

@@ -143,6 +143,7 @@ export default async function Home() {
         <h1 className="text-4xl text-white font-bold">Got a Story?</h1>
         <a
           href="https://www.theiroom.com/share-a-tip"
+          target="_blank"
           className="text-iyellow underline"
         >
           Share on iRoom
