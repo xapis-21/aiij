@@ -28,11 +28,11 @@ const AiijCard = () => {
             About AIIJ
           </h1>
           <p className="mb-12">
-            AIIJ is an organization dedicated to fostering investigative
-            journalism in Africa, with a focus on Uganda. We promote impactful
-            media practices rooted in human rights and social justice, aiming to
-            inform public discourse and create a supportive environment for
-            passionate investigative journalists.
+            AIIJ is an organization fostering investigative journalism in Africa
+            based in Uganda. We promote impactful media practices rooted in
+            human rights and social justice to inform public discourse and
+            create a supportive environment for passionate investigative
+            journalists.
           </p>
           <h2 className="text-center text-2xl font-bold mb-4">Our Vision</h2>
           <p className="mb-12">
@@ -42,8 +42,8 @@ const AiijCard = () => {
           <h2 className="text-center text-2xl font-bold mb-4">Our Mission</h2>
           <p className="mb-12">
             Growing investigative journalism in Africa through an integrated
-            program of training and capacity building, collaborative
-            reporting, research, grant making and legal support.
+            program of training and capacity building, collaborative reporting,
+            research, grant making and legal support.
           </p>
 
           <Link href={"/about-aiij"}>
