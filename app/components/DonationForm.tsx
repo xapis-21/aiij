@@ -1,15 +1,15 @@
 "use client";
 
 import { useFlutterwave, closePaymentModal } from "flutterwave-react-v3";
-import { useRef, useState } from "react";
-import NothingHere from "./NothingHere";
+import { useState } from "react";
+
 
 const DonationForm = () => {
   const [donateAmount, setDonateAmount] = useState(10);
-
+  // const { isLoaded, isSignedIn, user } = useUser();
   const [success, setSuccess] = useState(false);
-  const emailRef = useRef<HTMLInputElement>(null);
-  const fullNameRef = useRef<HTMLInputElement>(null);
+  const [name, setName] = useState<null | string>(null);
+  const [email, setEmail] = useState<null | string>(null);
 
   const config: any = {
     public_key: process.env.NEXT_PUBLIC_FLUTTERWAVE_PUBLIC_KEY,
@@ -18,8 +18,8 @@ const DonationForm = () => {
     currency: "USD",
     payment_options: "card",
     customer: {
-      email: emailRef.current?.value,
-      name: fullNameRef.current?.value,
+      email: email && email,
+      name: name && name,
     },
     customizations: {
       title: "Support iRoom",
@@ -109,7 +109,26 @@ const DonationForm = () => {
                 }`}
               />
             </div>
-
+            <div className="gap-4 flex flex-col md:flex-row py-4">
+              <input
+                type={"text"}
+                name=""
+                id=""
+                placeholder={"Enter full name"}
+                onChange={(e) => setName(e.target.value)}
+                className={`border pl-4 grid place-items-center text-xs md:text-sm  py-2.5 font-bold rounded-full duration-300 w-full `}
+                required
+              />
+              <input
+                type={"email"}
+                name="email"
+                id="email"
+                placeholder={"Enter email Address"}
+                onChange={(e) => setEmail(e.target.value)}
+                className={`border pl-4 grid place-items-center text-xs md:text-sm  py-2.5 font-bold rounded-full duration-300 w-full`}
+                required
+              />
+            </div>
             <button
               type="submit"
               className="bg-iyellow/80 hover:bg-iyellow duration-300 py-2.5 text-gray-800 font-semibold rounded-full mt-4 w-full"

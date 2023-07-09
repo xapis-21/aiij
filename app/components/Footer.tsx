@@ -84,7 +84,7 @@ const Footer = () => {
               href="mailto:xapisofficial@gmail.com"
               className="mt-8 lg:mt-0 text-xs font-semibold text-gray-300 hover:text-igreen-light"
             >
-             Design + Dev | Shafic Zziwa @Tateno Pictures
+             Design + Dev | Shafic Zziwa - Tateno Pictures
             </a>
             <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
               <a href="https://www.facebook.com/AfricanIIJ">
