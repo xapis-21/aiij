@@ -1,5 +1,11 @@
 import Image from "next/image";
 
+export const metadata = {
+  title: "Contact AIIJ",
+  description:
+    "Get in touch with the African Institute for Investigative Journalism (AIIJ) through our contact page. Whether you have inquiries, collaboration opportunities, or want to learn more about our work, our dedicated team is here to assist you. Find our contact information and reach out to us to join our mission in empowering investigative journalism, promoting media transparency, and driving positive change through impactful storytelling.",
+};
+
 const page = () => {
   return (
     <div className="py-14">
