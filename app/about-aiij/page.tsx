@@ -1,6 +1,12 @@
 import Image from "next/image";
 import Member from "../components/Member";
 
+export const metadata = {
+  title: "About AIIJ ",
+  description:
+    "Learn about AIIJ's mission, values and the incredible work to support journalists in uncovering the truth.",
+};
+  
 const AboutPage = () => {
   return (
     <main className="py-20">

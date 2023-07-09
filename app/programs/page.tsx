@@ -1,5 +1,11 @@
 import ProgramSection from "../components/ProgramSection";
 
+export const metadata = {
+  title: "Programs At AIIJ",
+  description:
+    "Explore the diverse range of programs offered by the African Institute for Investigative Journalism (AIIJ). Discover our comprehensive lineup of fellowships, mentorship programs, workshops, and initiatives aimed at empowering journalists and fostering excellence in investigative reporting. Dive into our programs and join us in advancing the field of investigative journalism and making a positive impact on society",
+};
+
 const ProgramsPage = () => {
   const programs = [
     {
