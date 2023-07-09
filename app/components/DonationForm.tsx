@@ -54,7 +54,7 @@ const DonationForm = () => {
           </h1>
           <p className="text-sm mb-2">
             To keep investigative journalism alive and enable us to continue
-            sharing more stories, we kindly request your support for the iRoom
+            sharing more stories, we kindly request your support for the institute
             with a one-time donation. Your contribution, no matter the amount,
             is vital in powering our reporting and sustaining it for the years
             to come. You can make your donation quickly and easily, and be
